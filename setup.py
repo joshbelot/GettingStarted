@@ -17,20 +17,20 @@ except ImportError:
     read_md = lambda f: open(f, 'r').read()
 
 from os import path
-setup(name='jpack',
+setup(name='my_pkg',
       version='0.0.1',
-      description='my first package',
+      description='Practice code',
       long_description= "" if not path.isfile("README.md") else read_md('README.md'),
       author='Josh Belot',
       author_email='joshbelot22@gmail.com',
-      url='https://github.com/joshbelot/GettingStarted',
+      url='github.com/joshbelot/GettingStarted',
       license='MIT',
-      setup_requires=['pytest-runner',],
+      setup_requires=['pytest-runner'],
       tests_require=['pytest', 'python-coveralls'],
       install_requires=[
           "numpy",
       ],
-      packages=['jpack'],
+      packages=['my_pkg'],
       # scripts=[''],
       include_package_data=True,
       classifiers=[
@@ -39,7 +39,7 @@ setup(name='jpack',
           'Natural Language :: English',
           'Operating System :: MacOS',
           'Programming Language :: Python',
-          'Programming Language :: Python :: 2',
-          'Programming Language :: Python :: 2.7',
+          'Programming Language :: Python :: 3',
+          'Programming Language :: Python :: 3.7',
       ],
      )
